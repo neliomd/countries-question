@@ -8,7 +8,7 @@ configuration:
       - "Countries/target/surefire-reports/unit.xml"
   ide_config:
     default_open_files:
-      - Countries/src/main/java/hackerrank/Solution.java
+      - Countries/src/main/java/com/countries/Solution.java
     project_menu:
       run: cd /home/ubuntu/fullstack/project/Countries; mvn clean install
       install: cd /home/ubuntu/fullstack/project/Countries; mvn clean
