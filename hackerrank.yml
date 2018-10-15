@@ -1,0 +1,15 @@
+---
+version: 1.0
+configuration:
+  has_webserver: false
+  scoring:
+    command: "cd /home/ubuntu/fullstack/project/Countries; mvn clean test -Dtest=UnitTestSuite; cd target/surefire-reports; cat *.xml >> unit.xml"
+    files:
+      - "Shopping/target/surefire-reports/unit.xml"
+  ide_config:
+    default_open_files:
+      - Shoppping/src/main/java/hackerrank/Purchase.java
+    project_menu:
+      run: cd /home/ubuntu/fullstack/project/Countries; mvn clean install
+      install: cd /home/ubuntu/fullstack/project/Countries; mvn clean
+      test: cd /home/ubuntu/fullstack/project/Countries; mvn clean test -Dtest=UnitTestSuite
