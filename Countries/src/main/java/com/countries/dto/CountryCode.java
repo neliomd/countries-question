@@ -1,6 +1,8 @@
 package com.countries.dto;
 
-public class CountryCode extends CountryInfo {
+import java.io.Serializable;
+
+public class CountryCode implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private String iso3166alpha2;
